@@ -3,3 +3,9 @@ exercises-modules
 
 # ignore diff files
 *.diff
+package-lock.json
+exercises/108-arrays.js
+exercises/102-undefined-booleans-null.js
+exercises/100-numbers.js
+exercises/102-undefined-booleans-null.js
+exercises/104-strings.js

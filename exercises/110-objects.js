@@ -9,8 +9,12 @@
 // Return the object of numbers in the function below.
 
 function threeNumbers () {
-  const numbers = { numberOne: 1, numberTwo: 2, numberThree: 3 }
-
+  const numbers = { 
+    numberOne: 1,
+    numberTwo: 2,
+    numberThree: 3 
+  }
+  return numbers;
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -18,8 +22,12 @@ function threeNumbers () {
 // Return the object of values in the function below.
 
 function manyTypes () {
-  const diverseObject = { name: 'banana', count: 42, isDelicious: true }
-
+  const diverseObject = { 
+    name: 'banana',
+    count: 42,
+    isDelicious: true,
+  }
+  return diverseObject;
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -29,7 +37,10 @@ function manyTypes () {
 // Return the name of the bestFruit Object below.
 
 function keyAccess () {
-  const bestFruit = { name: 'banana', count: 42, isDelicious: true }
+  const bestFruit = { name: 'banana',
+  count: 42,
+  isDelicious: true,
+}
 
   // console.assert() allows you to declare things that should be true; it's like
   // a sanity-check for your code.
@@ -39,7 +50,7 @@ function keyAccess () {
   console.assert(bestFruit['isDelicious'] === true)
 
   // return the name of the bestFruit Object here.
-
+  return bestFruit.name;
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -56,7 +67,8 @@ function addKey () {
   console.assert(bestFruit['isDelicious'] === true)
 
   // Assign 'yellow' to the key 'color' of bestFruit here and return bestFruit
-
+  bestFruit.color = "yellow";
+  return bestFruit;
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -79,6 +91,17 @@ function largeObject () {
 
   // create a bootcampStudent object here similar to bootcampInstructor and return it
 
+  const bootcampStudent = {
+    name: 'Hidekashi',
+    email: 'hideaki.lawliet@proton.me',
+    age: 20,
+    heightFeet: 5.5,
+    favoriteColor: 'Orange',
+    homeTown: 'Bordeaux',
+    pet: 'cat',
+    ownsCar: false,
+  }
+  return bootcampStudent;
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -102,7 +125,7 @@ function nestedArray () {
   console.assert(bootcampInstructor['favoriteFoods'][0] === 'chicken pot pie')
 
   // Return the second item of the nested array favoriteFoods
-
+  return bootcampInstructor['favoriteFoods'][1];
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -138,5 +161,5 @@ function dotNotation () {
   console.assert(bootcampInstructor.favoriteFoods[0] === 'chicken pot pie')
 
   // Return the name of the bootcampInstructor Object using dot notation
-
+  return bootcampInstructor.name
 }

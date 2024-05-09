@@ -8,23 +8,45 @@
 //          function should return
 
 
+function makeNothing() {
+    let huh
+    return huh;
+}
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // 1) Create a function "makeBoolean"
 // 2) Declare a variable "myBool" and assign it either true or false, then return "myBool"
 //    NOTE: remember that the string "true" (surrounded by quotes) is not
 //          the same thing as boolean true (no quotes)
 
+function makeBoolean () {
+    const myBool = true;
+    return myBool;
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // 1) Create a function "makeTrue"
 // 2) Declare a variable "yup" and assign boolean true, then return "yup"
 
+function makeTrue() {
+    const yup = true;
+    return yup;
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // 1) Create a function "makeFalse"
 // 2) Declare a variable "nope" and assign boolean false, then return "nope"
-
+function makeFalse() {
+    const nope = false;
+    return nope;
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // 1) Create a function "makeNull"
 // 2) Declare a variable "nothingMuch" and assign null to it, then return "nothingMuch"
+
+function makeNull() {
+    let nothingMuch = null;
+    return nothingMuch;
+}
+
